@@ -83,34 +83,34 @@ const employees = [
 
 //            toString
 //        task 1
-// function fullNameEmployees(array){
-//    return array.map(item =>{
-//         return `${item.firstName} ` + `${item.firstName}`
-//     }).toString()
-// }
-// console.log(fullNameEmployees(employees))
+function fullNameEmployees(array){
+   return array.map(item =>{
+        return `${item.firstName} ` + `${item.firstName}`
+    }).toString()
+}
+console.log(fullNameEmployees(employees))
 
 //       task 2
-// function getEmailSalary(array) {
-//   return array
-//     .map((item) => {
-//       return `${item.email} :${item.salary} ` ;
-//     })
-//     .toString();
-// }
-// console.log(getEmailSalary(employees))
+function getEmailSalary(array) {
+  return array
+    .map((item) => {
+      return `${item.email} :${item.salary} ` ;
+    })
+    .toString();
+}
+console.log(getEmailSalary(employees))
 
 //       task 3
 
-// Array.prototype.myToString = function (sym = ",") {
-//   if (!this.length) return "";
-//   let result = "";
-//   for (let i = 0; i < this.length; i++) {
-//     if(i === this.length-1){
-//         result +=String(this[i])
-//         continue
-//      }
-//     result += String(this[i]) + sym;
-//   }
-//   return result;
-// };
+Array.prototype.myToString = function (sym = ",") {
+  if (!this.length) return "";
+  let result = "";
+  for (let i = 0; i < this.length; i++) {
+    if(i === this.length-1){
+        result +=String(this[i])
+        continue
+     }
+    result += String(this[i]) + sym;
+  }
+  return result;
+};
