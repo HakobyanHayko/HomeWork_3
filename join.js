@@ -82,32 +82,32 @@ const employees = [
 ];
 //           join
 // task   4
-// function getEmailList(array){
-//     return array.map(item =>{
-//     return item.email
-//     }).join("//")
-// }
-// console.log(getEmailList(employees))
+function getEmailList(array){
+    return array.map(item =>{
+    return item.email
+    }).join("//")
+}
+console.log(getEmailList(employees))
 
 //     task  5
-// function getEmailSalary(array) {
-//   return array.map((item) => {
-//       return `${item.email} :${item.salary} `;
-//     }).join(", ")
-// }
-// console.log(getEmailSalary(employees))
+function getEmailSalary(array) {
+  return array.map((item) => {
+      return `${item.email} :${item.salary} `;
+    }).join(", ")
+}
+console.log(getEmailSalary(employees))
 
 //    task 6
-// Array.prototype.myJoin = function(sym = ","){
-//     if (!this.length) return "";
-//    let result = "";
-//    for (let i = 0; i < this.length; i++) {
-//      if(i === this.length-1){
-//         result +=String(this[i])
-//         continue
-//      }
-//      result += String(this[i]) + String(sym);
-//    }
-//    return result;
-// }
-// console.log([1,2,3].myJoin({}))
+Array.prototype.myJoin = function(sym = ","){
+    if (!this.length) return "";
+   let result = "";
+   for (let i = 0; i < this.length; i++) {
+     if(i === this.length-1){
+        result +=String(this[i])
+        continue
+     }
+     result += String(this[i]) + String(sym);
+   }
+   return result;
+}
+console.log([1,2,3].myJoin({}))
